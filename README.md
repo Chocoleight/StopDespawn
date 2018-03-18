@@ -6,12 +6,12 @@ So this is a quick fix to the despawn problem we all hate. It's **not** stable j
 
 ## Features
 
--- All the cars stay where you left them, by:
+**·** All the cars stay where you left them, by:
 - Preventing all the vehicles that any player has joined from despawning.
 - Saving their positions every set amount of time, and on vehicle exit if configured.
 - Loading all previously saved vehicles when the first player joins.
 
--- Debug mode for nerds :nerd_face:
+**·** Debug mode for nerds :nerd_face:
 
 ## Installation
 
