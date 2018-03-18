@@ -2,29 +2,38 @@
 
 > No more vehicle despawning in FiveM thanks to this script!
 
-## Requirements
+## Features
 
-- **EssentialMode**
+- Prevent all the vehicles that any player has joined from despawning.
+- Save their positions every set amount of time, and on vehicle exit if configured.
+- Load all previously saved vehicles when the first player joins.
+- Debug mode for nerds :nerd_face:
 
 ## Installation
 
-- Download the resource here : https://github.com/vodkhard/vdk_inventory 
-- Place the folder "vdk_inventory" to resources folder of FiveM
-- Execute _dump.sql_ file in your database (will create the tables and the constraints)
-- Change your database configuration in _config.lua_
-- Populate the `items` and user `user_inventory` tables to test
+- Just like every other resource... Here's the link:
+- Open the config.lua file and customize it if you want.
 
-## Usage
+## Known issues
 
-- For users : Press your Replay Help Button (usually '**K**') to show the menu
-- For developers : Use "**player:receiveItem**" and "**player:looseItem**" events with the item id and quantity as parameters events to add or remove items from the inventory
+- When many saved vehicles are near eachother and they all have to be restored, it sometimes spawns some of them twice. If anyone knows how to fix that, please tell me :pray:
 
-## Thanks
+## To-Do
 
-https://forum.fivem.net/t/release-gui-script-v0-8
-
-_For the menu_
+- Save on vehicle enter.
+- Add MySQL-async support in order to keep the cars saved even after server restarts.
+- Possibly add support for roleplay frameworks (this one is not likely though).
 
 ## Notes
 
-It's my first LUA script so please be indulgent with me and all valuable proposals are more than welcome.
+- It's my first script so don't expect such a clean code (the events are kinda mindblowing :laughing:).
+- Any suggestions are welcome.
+- Please report any bug after checking the known issues.
+- This script will be updated actively during the rest of March 2018.
+
+## Changelog
+
++ Saving schedule.
++ Despawn checking schedule.
++ Despawn checking on first player join.
++ Saving once after vehicle exit.
