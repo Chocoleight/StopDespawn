@@ -34,7 +34,7 @@ So this is a quick fix to the despawn problem we all hate. It's **not** stable j
 ## Notes
 
 - It's my first script so don't expect such a clean code (the events are kinda mindblowing :laughing:).
-- Here is the <a href="https://github.com/Chocoleight/StopDespawn">FiveM thread</a>.
+- Here is the <a href="https://forum.fivem.net/t/beta-stop-vehicle-despawning/92696">FiveM thread</a>.
 - Again, this script is still in an early beta version and it needs testing.
 - Please report any bugs after making sure they're not already known.
 - Any suggestions are welcome.
