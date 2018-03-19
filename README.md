@@ -17,7 +17,7 @@ I hope it helps somebody out. :wink:
 
 ## Installation
 
-- Were you expecting me to make a tutorial on how to install a resource for you? Nah, but don't worry, I'll give you the download link: <a class="attachment" href="/uploads/default/original/3X/8/a/8ae7d9e5998eb4430767da91515a82e0e84ec853.zip">StopDespawn.zip</a> (2.5 KB)
+- Were you expecting me to make a tutorial on how to install a resource for you? Nah, but don't worry, I'll give you the download link: <a class="attachment" href="https://forum.fivem.net/uploads/default/original/3X/6/0/6043801d93036dd1514a69611403d7f85ed91ed8.zip">StopDespawn.zip</a> (2.5 KB)
 
 - Open the config.lua file and customize it if you want.
 
