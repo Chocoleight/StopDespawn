@@ -42,7 +42,7 @@ So this is a quick fix to the despawn problem we all hate. It's **not** stable j
 
 ## Changelog
 
-**+** Saving schedule.
-**+** Despawn checking schedule.
-**+** Despawn checking on first player join.
-**+** Saving once after vehicle exit.
++ Saving schedule.
++ Despawn checking schedule.
++ Despawn checking on first player join.
++ Saving once after vehicle exit.
