@@ -8,10 +8,11 @@ I hope it helps somebody out. :wink:
 ## Features
 
 **-** All the vehicles stay where you left them, by:
-- Preventing all the vehicles that any player has joined from despawning (Restores the despawned vehicles every given amount of time and once after the vehicle has been recently left by a player).
-- Saving their positions every set amount of time, and on vehicle exit if configured.
+- Preventing all the vehicles that any player has joined from despawning (Restores the despawned vehicles every given amount of time).
+- Saving their positions every set amount of time, on vehicle enter, and on vehicle exit if configured.
 - Loading all previously saved vehicles when the first player joins.
 
+**-** Saving API for developers.
 **-** Debug mode for nerds :nerd_face:
 
 ## Installation
@@ -24,13 +25,10 @@ I hope it helps somebody out. :wink:
 
 - When many saved vehicles are close to each other and they all must be restored, it sometimes spawns some of them twice. If anyone knows how to fix that, please tell me. :pray:
 - Some may consider a bug the fact that the customization of the vehicles doesn't save, but it's not. Moreover, It will soon be implemented (check the To-Do section).
-- If you quickly enter and exit a vehicle it doesn't get saved. But hey, don't worry, it'll be fixed in the next update by saving on vehicle enter.
 
 ## To-Do
 
-- Save on vehicle enter.
 - Add DeleteVehicle support.
-- Make a save event for other script developers.
 - Save more vehicle information (paintjobs, customization, engine status, sirens, and any suggestions you may have :wink:).
 - Add more customization.
 - Add MySQL-async support in order to keep the cars saved even after server restarts.
@@ -45,9 +43,19 @@ I hope it helps somebody out. :wink:
 - Any suggestions are welcome.
 - This script will be updated actively during the rest of March 2018 (and will keep updating after March but probably less often).
 
-## Changelog
+## Latest changes
 
-+ Saving schedule.
-+ Despawn checking schedule.
-+ Despawn checking on first player join.
-+ Saving once after vehicle exit.
++ Save on vehicle enter.
++ Save event for developers (check next section).
+
+## API
+
++ With the 'sd:save' event, you can save any vehicle by just giving its ID as the only argument. For example:
+```lua
+local vehicleId GetVehiclePedIsUsing(GetPlayerPed(-1))
+TriggerEvent('sd:save', vehicleId)
+```
+And if you are calling it from a server script (not recommended), just trigger the event on any ID, like the 1st one:
+```lua
+TriggerClientEvent('sd:save, GetPlayers()[1], vehicleId)
+```
