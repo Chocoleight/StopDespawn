@@ -2,11 +2,11 @@
 
 > No more vehicle despawning in FiveM thanks to this script!
 
-So this is a quick fix to the despawn problem we all hate. It's **not** stable just yet, and I need help testing it, because I have only tested it with just myself in a server. I hope it helps somebody out. :wink: 
+This is a quick fix to the despawn problem we all hate. It's **not** stable just yet, and I need help testing it, because I have only tested it with just myself in a server. I hope it helps somebody out. :wink: 
 
 ## Features
 
-**-** All the cars stay where you left them, by:
+**-** All the vehicles stay where you left them, by:
 - Preventing all the vehicles that any player has joined from despawning.
 - Saving their positions every set amount of time, and on vehicle exit if configured.
 - Loading all previously saved vehicles when the first player joins.
@@ -15,13 +15,15 @@ So this is a quick fix to the despawn problem we all hate. It's **not** stable j
 
 ## Installation
 
-- Were you expecting me to make a tutorial on how to install a resource for you? Nah, but don't worry, I'll give you the download link: <a class="attachment" href="https://forum.fivem.net/uploads/default/original/3X/8/a/8ae7d9e5998eb4430767da91515a82e0e84ec853.zip">StopDespawn.zip</a> (2.5 KB)
+- Were you expecting me to make a tutorial on how to install a resource for you? Nah, but don't worry, I'll give you the download link: <a class="attachment" href="/uploads/default/original/3X/8/a/8ae7d9e5998eb4430767da91515a82e0e84ec853.zip">StopDespawn.zip</a> (2.5 KB)
 
 - Open the config.lua file and customize it if you want.
 
 ## Known bugs
 
-- When many saved vehicles are near eachother and they all must be restored, it sometimes spawns some of them twice. If anyone knows how to fix that, please tell me :pray:
+- When many saved vehicles are near eachother and they all must be restored, it sometimes spawns some of them twice. If anyone knows how to fix that, please tell me. :pray:
+- Some may consider a bug the fact that the customization of the vehicles doesn't save, but it's not. It will soon be implemented (check the To-Do section).
+- If you quickly enter and exit a vehicle it doesn't get saved. But hey, don't worry, it'll be fixed in the next update by saving on vehicle enter.
 
 ## To-Do
 
