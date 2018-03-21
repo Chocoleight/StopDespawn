@@ -12,8 +12,7 @@ I hope it helps somebody out. :wink:
 - Saving their positions every set amount of time, on vehicle enter, and on vehicle exit if configured.
 - Loading all previously saved vehicles when the first player joins.
 
-**-** Saving API for developers.
-**-** Debug mode for nerds :nerd_face:
+**-** Saving API for developers & debug mode for nerds :nerd_face:
 
 ## Installation
 
